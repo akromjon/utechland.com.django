@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UtechLang | Technology Land | Internet Blog</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    {% include 'components/head.html' %}
+</head>
+<body>
+    <div id="main">
+        {% include 'components/progress-bar.html' %}
+        {% include 'components/header.html' %}
+        <div id="wrapper">
+            <div class="content">
+                <!-- hero-slider-wrap     -->               
+                <!-- hero-slider-wrap  end   -->
+                <!-- section   -->
+                {% block 'content' %}
+                {% endblock %}
+            </div>
+           {% include 'components/footer.html' %}
+        </div>
+    </div>
+    {% include 'components/scripts.html' %}
+</body>
+
+</html>
