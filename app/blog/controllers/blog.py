@@ -4,8 +4,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'pages/blog/index.html', {'range': range(10)})
+    return render(request, 'pages/blog/index.html', {'range': range(100)})
 
-def show(request,id):
-    return render(request, 'pages/blog/index.html', {'range': range(10)})
+def show(request,slug):
+    return render(request, 'pages/blog/show.html')
 

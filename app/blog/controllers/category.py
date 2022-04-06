@@ -4,6 +4,6 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'pages/home/index.html', {'range': range(10)})
 
-def show(request,id):
+def show(request,slug):
     return render(request, 'pages/home/index.html', {'range': range(10)})
 
